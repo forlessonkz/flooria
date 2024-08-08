@@ -1,0 +1,81 @@
+
+.trending__products__container {
+    display: flex;
+}
+
+.img__bcg__container,
+.trending__products__list {
+    width: 50%;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-left: 15px;
+}
+
+.product__card__top {
+    width: 270px;
+    height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.product__card__top > button {
+    position: absolute;
+}
+
+.products__card__bottom {
+    padding: 15px 0 20px;
+    text-align: center;
+}
+
+.products__card__bottom > h5 {
+    font-size: 24px;
+    font-weight: 400;
+
+    font-family: "Teko";
+    color: #151515;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.products__card__bottom >  p {
+    font-size: 18px;
+    font-family: "Teko";
+
+    color: #dab57a;
+    letter-spacing: .05em;
+}
+
+
+.benefits__container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits__card {
+    position: relative;
+    width: 370px;
+    height: 145px;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+}
+
+
+.benefits__card::before {
+    content: '';
+    position: absolute;
+    top: 6px; left: 6px; right: 6px; bottom: 6px;
+    border: 1px solid #d7d7d7;
+
+}
