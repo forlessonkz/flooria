@@ -35,3 +35,9 @@
     text-transform: uppercase;
     color: #151515;
 }
+
+/* Base container style */
+
+.base__container__width {
+    padding: 0px 19.5%;
+}

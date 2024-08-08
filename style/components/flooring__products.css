@@ -1,6 +1,13 @@
+.flooring__products__list {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .flooring__products__card {
+    margin-bottom: 25px;
     border: 1px solid #d7d7d7;
-    /* padding: 10px 10px; */
     position: relative;
     width: 370px;
     height: 303px;
@@ -8,6 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
 .flooring__products__card::before {
@@ -36,9 +45,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 1;
 
-
-    background-color: rgba(25, 24, 24, 0.45);
+    background-color: rgba(25, 24, 24, 0.486);
     opacity: 0;
     transition: all .3s ease;
 }
@@ -47,22 +56,48 @@
     opacity: 1;
 }
 
+.flooring__card__img > img {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.flooring__products__card:hover .flooring__card__img > img {
+    transform: scale(1.0);
+}
+
 
 .flooring__card__title {
     position: absolute;
+    z-index: 2;
     text-align: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.flooring__products__card:hover .flooring__card__title {
+    opacity: 1;
 }
 
 .flooring__card__title > h5 {
+    margin-top: 15px;
     font-size: 24px;
     font-weight: 500;
 
     text-transform: uppercase;
     font-family: "Teko", sans-serif;
     color: #fff;
+    transition: all .3s ease;
+}
 
+.flooring__products__card:hover h5 {
+    margin-top: 0;
+}
+
+.flooring__card__title > h5:hover {
+    color: #dab57a;
 }
 
 .flooring__card__icon > svg {
     width: 25px;
+    cursor: pointer;
 }

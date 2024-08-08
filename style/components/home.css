@@ -2,6 +2,9 @@
     /* position: relative; */
     width: 100%;
 }
+.home__section {
+    padding-bottom: 70px;
+}
 
 /* Base home slider styles */
 .slide {
